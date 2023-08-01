@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+
+*{
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+body{
+    background: linear-gradient(260deg ,rgb(255, 72, 0),rgb(255, 166, 0));
+    height: 100vh;
+
+
+}
+
+
+/* menu do site  */
+
+.header{
+
+    padding: 10px 5px ;
+    padding-bottom: 0%;
+    width: 100%;
+    background: black;
+    color: orange;
+} 
+.header h1{
+    font-size: 1.525rem;
+    text-align: center;
+    margin: 10px ;
+}
+
+.header nav ul{
+
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+    padding: 10px;
+    color: orange;
+
+}
+nav li a {
+    color: orange;
+}
+.header nav ul:hover a{
+    color: rgb(92, 92, 92) ;
+    transition: .5s;
+
+}
+.header nav ul:hover a:hover{
+    font-size: 1.125rem;
+    text-decoration: underline;
+    color: tomato;
+    transition: .999s;
+
+}
+
+
+
+/* SECTION IMC  */
+
+.IMC .header-IMC{
+    padding: 10px 5px ;
+    padding-bottom: 5%;
+    width: 100%;
+    color: white;
+
+
+
+} 
+
+.IMC .header-IMC > div{
+    display: grid;
+    grid-template-areas: 
+        'altura peso'
+        'sexo idade';
+    margin: 5px ;
+    gap: 10px 5px  ;
+}
+.IMC .header-IMC h2{
+    display: block;
+    padding-left: 35px ;
+    margin-bottom: 25px ;
+}
+.IMC .header-IMC button{
+    display: block;
+    width:88% ;
+    margin: 0 auto;
+    padding: 5px 20px ;
+    margin-top: 20px ;
+    border: none;
+    border-radius: 25px ;
+    background-color: rgba(234, 65, 3, 0.566);
+    color: white ;
+    font-size: 1.3em;
+    cursor: pointer;
+} .IMC .header-IMC button:hover{
+    box-shadow:  0px 0px 20px 5px  rgba(136, 46, 14, 0.986);
+    transition: .5s;
+    transform: scale(1.125);
+}
+
+.IMC input{
+    border:none!important;
+    justify-self: center;
+    width: 80%;
+    border-radius: 25px;
+    padding: 10px ;
+    margin: 0px ;
+    text-align: center;
+    background-color: rgba(234, 65, 3, 0.566);
+    color: white;
+    
+}
+#kilos {
+    grid-area: peso;
+    height: 100%;
+}
+#altura {
+    grid-area: altura;
+    height: 100%;
+
+}
+#idade{
+    grid-area: idade;
+    height: 100%;
+
+}
+
+/* btn / bt-homem-mulher  */
+
+
+.btn{
+    height: 100%;
+
+    grid-area: sexo;
+    background-color: rgba(234, 65, 3, 0.566);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn div.btnSexo{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+}
+
+.btn img{
+    opacity: .5;
+    transition: .5s;
+
+}
+
+.btnSexo:hover{
+    background-color: white;
+    border-radius: 25px;
+    transition: .5s;
+
+
+}
+.btnSexo:hover img{
+    opacity: 1;
+    transition: .5s;
+
+}
+
+
+
+/* main do IMC  */
+
+.main-IMC{
+    border-radius: 25px 25px 0px 0px   ;
+    background-color: white ;
+    padding: 20px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px ;
+    font-size: 0.875em;
+    width: 100vw;
+
+
+}
+footer p{
+    margin: auto;
+    text-align: center;
+
+    width: 100vw;
+}
