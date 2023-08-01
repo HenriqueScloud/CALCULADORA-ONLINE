@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Calculadora.css">
+</head>
+<body>
+
+<!-- menu do site com suas opções de calculo -->
+
+
+<header class="header">
+    <h1>Calculadora Online</h1>
+    <nav>
+        <ul>
+            <li ><a href="#calculadora ">Calculadora</a> </li>
+            <li><a href="#IMC">IMC</a></li>
+            <li><a href="#juros">Juros</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    
+    <section>
+        <!-- Calculadora-->
+    </section>
+    
+    
+    <section class="IMC">
+        <!-- IMC-->
+    
+        <header class="header-IMC ">
+            <h2>Calculadora de IMC</h2>
+            <div>
+                    <input type="number" name="altura" id="altura" placeholder="Altura  (cm)">
+                <input type="number" name="kilos" id="kilos" placeholder="Quilos  (kg)">
+
+                <input type="number" name="idade" id="idade" placeholder="Idade">
+
+                <div class="btn">
+                    <div class="btnSexo"><img src="midia/homem.png" alt=""></div>
+                    <div class="btnSexo"><img src="midia/mulher.png" alt=""> </div>
+                </div>
+            
+            </div>
+                <button onclick="calcular()">Calcular</button>
+            
+            
+        </header>
+    
+        <main class="main-IMC">
+            <section>
+                <h1>obesidade (!)</h1>
+                <p>+24.65 kg!</p>
+                <span>32.5</span>
+            </section>
+    
+            <article>
+                <!-- animação de porcentagem do imc -->
+            </article>
+    
+            <article>
+                <ul>
+                    <li>Muito abaixo do peso</li>
+                    <li>Abaixo do peso </li>
+                    <li>Normal </li>
+                    <li>Sobrepeso</li>
+                    <li>Obesidade Grau 1</li>
+                    <li>Obesidade Grau 2</li>
+                    <li>Obesidade Grau 3</li>
+                </ul>
+            </article>
+        </main>
+    
+    
+    
+    </section>
+    
+    <section>
+        <!-- Juros-->
+    </section>
+</main>
+
+
+<footer>
+    <p>Desenvolvido por &copy; Henrique S. Mendes </p>
+</footer>
+
+</body>
+</html>
