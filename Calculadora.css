@@ -26,6 +26,7 @@ body{
     width: 100%;
     background: black;
     color: orange;
+    
 } 
 .header h1{
     font-size: 1.525rem;
@@ -45,13 +46,15 @@ body{
     
     padding: 10px;
     color: orange;
+    max-width: 1160px;
+    margin: 0 auto;
 
 }
 nav li a {
     color: orange;
 }
 .header nav ul:hover a{
-    color: rgb(92, 92, 92) ;
+    color: rgb(255, 255, 255) ;
     transition: .5s;
 
 }
@@ -72,6 +75,8 @@ nav li a {
     padding-bottom: 5%;
     width: 100%;
     color: white;
+    max-width: 1160px;
+    margin: 0 auto;
 
 
 
@@ -181,7 +186,9 @@ nav li a {
 .main-IMC{
     border-radius: 25px 25px 0px 0px   ;
     background-color: white ;
-    padding: 20px ;
+    padding: 50px ;
+    max-width: 960px;
+    margin: 0 auto;
 }
 .main-IMC section{
     /* border: 1px solid blue; */
@@ -213,6 +220,36 @@ nav li a {
     margin: 5px 5px 20px 5px;
 }
 
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 90% { transform: translateX(-2px); }
+    20%, 80% { transform: translateX(10px); }
+    30%, 50%, 70% { transform: translateX(-10px); }
+    40%, 60% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}  
+.error {
+    animation: shake 0.5s ease-in-out forwards;
+    border: 2px solid red  !important;
+    border-radius: 25px;
+}
+
+.alerta{
+    background-color: rgba(0, 0, 0, 0.468);
+    display: flex;
+    /* margin: 30px 5px 10px 5px  ; */
+    padding: 10px;
+    max-width: 1160px;
+    margin: 30px auto -10px;
+    
+    
+}
+.alerta p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1160px;
+    margin: 0 auto;
+}
 
 
 
